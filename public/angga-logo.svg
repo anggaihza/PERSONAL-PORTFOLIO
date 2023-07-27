@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3184" height="388" viewBox="0 0 3184 388">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        font-size: 50px;
+      }
+
+      .cls-1 {
+        font-family: "Tw Cen MT";
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+        font-family: Montserrat;
+      }
+
+      .cls-2 {
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #f13024;
+      }
+
+      .cls-4 {
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text id="a" class="cls-1" x="81.413" y="-109.711">a</text>
+  <text id="asep" class="cls-2" transform="translate(-23.214 284.5) scale(10.537)">asep</text>
+  <rect class="cls-3" x="3136.41" y="237.656" width="47.37" height="47.375"/>
+  <text id="angga" class="cls-4" transform="translate(1418.873 284.5) scale(10.537)">angga</text>
+</svg>
