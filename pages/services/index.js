@@ -20,7 +20,7 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="h2 xl:mt-8">
-              My services <span className="text-accent">.</span>
+              My services <span className="text-accent">&quot;.&quot;</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -28,8 +28,9 @@ const Services = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              "Comprehensive Solutions to Boost Your Digital Presence and
-              Success. Let's Collaborate and Achieve Excellence Together!"
+              &quot;Comprehensive Solutions to Boost Your Digital Presence and
+              Success. Let&apos;s Collaborate and Achieve Excellence
+              Together!&quot;
             </motion.p>
           </div>
           <motion.div
