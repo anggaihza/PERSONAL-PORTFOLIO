@@ -1,3 +1,4 @@
+import {useRouter} from "next/router";
 // data
 const workSlides = {
   slides: [
@@ -5,7 +6,8 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/thumbA.png",
+          link: "real-estate-web-nextjs-3qo46pg4w-anggaihza.vercel.app",
         },
         {
           title: "title",
@@ -53,8 +55,45 @@ import "swiper/css/pagination";
 
 import {BsArrowRight} from "react-icons/bs";
 import Image from "next/image";
+import {useEffect} from "react";
 
 const WorkSlider = () => {
+  const router = useRouter();
+
+  const handleImageClick = (link) => {
+    if (!link) {
+      return;
+    }
+
+    if (!link.includes("://")) {
+      link = "https://" + link;
+    }
+
+    window.open(link, "_blank");
+  };
+
+  useEffect(() => {
+    const handleNavigation = (link) => {
+      if (!link) {
+        return;
+      }
+
+      router.push(link);
+    };
+
+    document.querySelectorAll(".swiper-slide").forEach((slide) => {
+      slide.addEventListener("click", (event) => {
+        const clickedImage = event.target.closest("div[data-image-link]");
+        if (clickedImage) {
+          const link = clickedImage.getAttribute("data-image-link");
+          handleImageClick(link);
+        } else {
+          const slideLink = slide.getAttribute("data-slide-link");
+          handleNavigation(slideLink);
+        }
+      });
+    });
+  }, [router]);
   return (
     <Swiper
       spaceBetween={10}
@@ -63,14 +102,16 @@ const WorkSlider = () => {
       className="h-[280px] sm:h-[480px]">
       {workSlides.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} target="_blank" rel="noopener noreferrer">
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
                   <div
                     key={index}
+                    onClick={() => handleImageClick(image.link)}
                     className="relative rounded-lg overflow-hidden flex
-                  items-center justify-center group">
+                  items-center justify-center group"
+                    data-image-link={image.link}>
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
                       <Image

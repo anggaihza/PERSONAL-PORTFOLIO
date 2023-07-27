@@ -70,43 +70,43 @@ const aboutData = [
   //     },
   //   ],
   // },
-  {
-    title: "experience",
-    info: [
-      {
-        id: 1,
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        id: 2,
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        id: 3,
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "experience",
+  //   info: [
+  //     {
+  //       id: 1,
+  //       title: "UX/UI Designer - XYZ Company",
+  //       stage: "2012 - 2023",
+  //     },
+  //     {
+  //       id: 2,
+  //       title: "Web Developer - ABC Agency",
+  //       stage: "2010 - 2012",
+  //     },
+  //     {
+  //       id: 3,
+  //       title: "Intern - DEF Corporation",
+  //       stage: "2008 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "credentials",
     info: [
       {
         id: 1,
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Full Stack Web Development - Purwadhika Digital School & Technology",
+        stage: "2023",
       },
       {
         id: 2,
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Junior Web Programming (Work in Tech Indonesia) - RubicWeb Inco Academy",
+        stage: "2022",
       },
       {
         id: 3,
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "IT Support - Coursera",
+        stage: "2021",
       },
     ],
   },
@@ -159,7 +159,7 @@ const About = () => {
             collaborated on digital products for business and costumer use. */}
             Passionate technologist driven by creativity and innovation.
             Crafting impactful digital experiences with a collaborative
-            approach, connecting brands with audiences worldwide.
+            approach.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -169,7 +169,7 @@ const About = () => {
             className="hidden z-50 md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div className="flex flex-1 gap-3">
               {/* experience */}
-              <div
+              {/* <div
                 className="relative after:w-[1px] after:h-full after:bg-white/10 
             after:top-0 
             ">
@@ -179,9 +179,9 @@ const About = () => {
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Year of experience
                 </div>
-              </div>
+              </div> */}
               {/* projects */}
-              <div
+              {/* <div
                 className="relative after:w-[1px] after:h-full after:bg-white/10 
             after:top-0
             ">
@@ -191,7 +191,7 @@ const About = () => {
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
