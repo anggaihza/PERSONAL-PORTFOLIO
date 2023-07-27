@@ -12,7 +12,7 @@ const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href={"https://wa.me/6285860654098"}
+        href={"https://wa.link/dbr5td"}
         target="_blank"
         className="hover:text-accent transition-all duration-300">
         <RiWhatsappLine />
