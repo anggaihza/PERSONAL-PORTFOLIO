@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // icons
 import {
@@ -22,7 +22,6 @@ import {
   SiAdobeillustrator,
   SiAdobepremierepro,
   SiAdobelightroom,
-  SiAdobe,
 } from "react-icons/si";
 //  data
 const aboutData = [
@@ -111,8 +110,8 @@ import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // framer motion
-import {motion} from "framer-motion";
-import {fadeIn} from "../../variants";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 //counter
 import CountUp from "react-countup";
@@ -202,10 +201,9 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${
-                    index == itemIndex &&
+                  className={`${index == itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8
+                    } cursor-pointer capitalize xl:text-lg relative after:w-8
                   after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}>
                   {item.title}
@@ -217,13 +215,12 @@ const About = () => {
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center
           xl:items-start 
           ">
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item, innerIndex) => {
               const isExperienceOrCredentials =
                 item.title === "experience" || item.title === "credentials";
-
               return (
                 <div
-                  key={itemIndex}
+                  key={innerIndex}
                   className="flex-1 max-w-max gap-y-2 text-white/60">
                   {isExperienceOrCredentials ? (
                     <div className="flex md:flex-row">
@@ -244,8 +241,8 @@ const About = () => {
 
                   {/* icons */}
                   <div className="flex flex-wrap gap-x-4">
-                    {item.icons?.map((icon, iconIndex) => (
-                      <div key={iconIndex} className="text-2xl text-white">
+                    {item.icons.map((icon, itemIndex) => (
+                      <div key={itemIndex} className="text-2xl text-white">
                         {icon}
                       </div>
                     ))}
