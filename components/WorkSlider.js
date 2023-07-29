@@ -11,7 +11,8 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/thumbB.jpg",
+          link: "https://jcwdol0904.purwadhikabootcamp.com",
         },
         {
           title: "title",
