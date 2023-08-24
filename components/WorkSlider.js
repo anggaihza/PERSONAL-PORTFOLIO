@@ -16,7 +16,8 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/thumb3aa.png",
+          link: "https://modern-responsive-website-gpt-3.vercel.app/",
         },
         {
           title: "title",
@@ -28,11 +29,13 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/thumb2c.png",
+          link: "https://epictetus-liard.vercel.app/",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/thumb4b.png",
+          link: "https://react-tailwind-responsive-web.vercel.app/",
         },
         {
           title: "title",
@@ -40,7 +43,8 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/thumb33a.jpg",
+          link: "https://react-tailwind-nike-l1b188fmr-anggaihza.vercel.app/",
         },
       ],
     },

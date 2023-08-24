@@ -108,6 +108,11 @@ const aboutData = [
         title: "IT Support - Coursera",
         stage: "2021",
       },
+      {
+        id: 4,
+        title: "Bachelor's degree - Jenderal Achmad Yani University",
+        stage: "2021",
+      },
     ],
   },
 ];
