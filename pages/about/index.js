@@ -95,21 +95,26 @@ const aboutData = [
     info: [
       {
         id: 1,
-        title: "Full Stack Web Development - Purwadhika Digital School & Technology",
+        title: "Software Engineer - Binar Academy",
         stage: "2023",
       },
       {
         id: 2,
-        title: "Junior Web Programming (Work in Tech Indonesia) - RubicWeb Inco Academy",
-        stage: "2022",
+        title: "Full Stack Web Development - Purwadhika Digital School & Technology",
+        stage: "2023",
       },
       {
         id: 3,
+        title: "Web Programming (Work in Tech Indonesia) - RubicWeb Inco Academy",
+        stage: "2022",
+      },
+      {
+        id: 4,
         title: "IT Support - Coursera",
         stage: "2021",
       },
       {
-        id: 4,
+        id: 5,
         title: "Bachelor's degree - Jenderal Achmad Yani University",
         stage: "2021",
       },
